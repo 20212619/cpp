@@ -85,3 +85,4 @@ int main() {
     startGame();  // 게임 시작
     return 0;
 }
+1
