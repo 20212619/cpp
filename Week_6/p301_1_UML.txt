@@ -1,0 +1,15 @@
++---------------------+
+|      MyTime         |
++---------------------+
+| - hours: int        |
+| - minutes: int      |
+| - seconds: int      |
+| - milliseconds: int |
++---------------------+
+| + MyTime(h=0, m=0, s=0, ms=0) |
+| + void convert(double)       |
+| + void print()               |
+| + MyTime add(MyTime)         |
+| + void reset()               |
+| + void input()               |
++---------------------+
