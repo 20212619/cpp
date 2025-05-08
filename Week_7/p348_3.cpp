@@ -1,4 +1,3 @@
-
 // p348_3.cpp
 #include <iostream>
 #include <cstdlib>
