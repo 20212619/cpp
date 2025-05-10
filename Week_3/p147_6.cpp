@@ -10,6 +10,7 @@ void playGuguOnce();  // 구구단 게임
 void playMultiplication();  // 두 자리 수 곱셈 게임
 void playAddition(int digits);  // 여러 자리 덧셈 게임
 void startGame();  // 게임 시작 함수
+int count = 0;
 
 // 구구단 게임
 void playGuguOnce() {
@@ -22,6 +23,7 @@ void playGuguOnce() {
 
     if (answer == a * b) {
         cout << "정답!\n";
+        count++;
     } else {
         cout << "틀렸습니다. 정답: " << a * b << "\n";
     }
@@ -70,14 +72,17 @@ void startGame() {
     cout << "3~9: 해당 자리 수 덧셈\n";
     cin >> choice;
 
-    if (choice == 1) {
-        playGuguOnce();
-    } else if (choice == 2) {
-        playMultiplication();
-    } else if (choice >= 3 && choice <= 9) {
-        playAddition(choice);
-    } else {
-        cout << "잘못된 선택입니다.\n";
+    while(count < 10)
+    {
+        if (choice == 1) {
+            playGuguOnce();
+        } else if (choice == 2) {
+            playMultiplication();
+        } else if (choice >= 3 && choice <= 9) {
+            playAddition(choice);
+        } else {
+            cout << "잘못된 선택입니다.\n";
+        }
     }
 }
 
@@ -85,4 +90,3 @@ int main() {
     startGame();  // 게임 시작
     return 0;
 }
-1
