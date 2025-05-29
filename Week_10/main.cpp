@@ -13,8 +13,8 @@ int main() {
     game.add(new Siangshi("샹시", "X", rand() % w, rand() % h));
     game.add(new Dragon("드래곤", "D", rand() % w, rand() % h));
 
-    game.add(new Tuman("왼쪽 경기자", "좌", rand() % w, rand() % h));
-    game.add(new Tuman("오른쪽 경기자", "우", rand() % w, rand() % h));
+    game.add(new Tuman("왼쪽 경기자", "L", rand() % w, rand() % h));
+    game.add(new Tuman("오른쪽 경기자", "R", rand() % w, rand() % h));
 
     game.play(500, 30);
 
